@@ -22,16 +22,17 @@
     <!-- Campo Email (con validación) -->
     <div class="flex flex-col gap-2">
       <label for="email" class="font-medium text-white">Email</label>
-      <input type="email" id="email" placeholder="correo@ejemplo.com" class="form-control" />
-      <span class="text-sm text-pink-500">Ingresa un correo válido</span>
+      <input type="email" id="email" placeholder="correo@ejemplo.com" class="form-control peer" />
+      <span class="invisible text-sm text-pink-500 peer-invalid:visible">Ingresa un correo válido</span>
     </div>
 
     <!-- Campo Password -->
     <div class="flex flex-col gap-2">
       <label for="password" class="font-medium text-white">Password</label>
       <input type="password" id="password" minlength="8" maxlength="16" placeholder="Mínimo 8 caracteres"
-        class="form-control" />
-      <span class="text-sm text-pink-500">Ingresa una contraseña válida de entre 8 y 16 caracteres</span>
+        class="form-control peer" />
+      <span class="invisible text-sm text-pink-500 peer-invalid:visible">Ingresa una contraseña válida de entre 8 y 16
+        caracteres</span>
     </div>
 
     <!-- Botón Submit -->
